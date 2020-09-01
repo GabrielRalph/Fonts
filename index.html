@@ -5,14 +5,17 @@
   <title>Fonts</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
+  <link type="text/css" href = "https://fonts.hub.guru/fonts.css"/>
   <body>
     <h1>Guru Sans</h1>
     <h1>Guru Serif</h1>
     <h1>Guru Bold</h1>
   </body>
 
-  <style>
-
-  </style>
+  <script>
+    let h1s = document.getElementsByTagName('h1');
+    for (var i = 0; i < h1s.length; i++){
+      h1s[i].style.setProperty('font-family', h1s[i].innerHTML)
+    }
+  </script>
 </html>
